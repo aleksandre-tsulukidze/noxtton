@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+// eslint-disable-next-line no-unused-vars
+import { Route, Switch, Redirect } from 'react-router';
+import TopNav from './components/TopNav';
+import Landing from './components/Landing';
+import Detail from './components/Detail';
+import './css/App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <TopNav />
+      <Switch>
+        <Route path="/" exact component={Landing} />
+        <Route path="/detail/:username/:repoName" component={Detail} />
+      </Switch>
     </div>
   );
 }
