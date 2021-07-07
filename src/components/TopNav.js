@@ -6,8 +6,9 @@ const TopNav = () => {
   return (
     <nav className="topNav">
       <ul>
-        <Link to="/">GitHub Search</Link>
-        <li>Results</li>
+        <li>
+          <Link to="/">GitHub Search</Link>
+        </li>
       </ul>
     </nav>
   );

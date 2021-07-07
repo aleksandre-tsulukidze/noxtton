@@ -1,7 +1,7 @@
 .topNav {
   width: 100%;
-  height: 50px;
-  background-color: pink;
+  height: 75px;
+  background-color: rgb(226, 145, 113);
   margin: 0;
   display: flex;
   align-items: center;
@@ -21,6 +21,15 @@
   color: white;
 }
 
-.topNav li:first-of-type {
-  margin: 0 20px;
+.topNav a {
+  text-decoration: none;
+  color: white;
+}
+
+.topNav a:hover {
+  text-decoration: underline;
+}
+
+.topNav li:first-child {
+  margin: 0 60px 0 30px;
 }
