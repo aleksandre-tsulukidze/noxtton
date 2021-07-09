@@ -9,6 +9,9 @@ const TopNav = () => {
         <li>
           <Link to="/">GitHub Search</Link>
         </li>
+        {/* <li>
+          <Link>Results</Link>
+        </li> */}
       </ul>
     </nav>
   );

@@ -13,7 +13,7 @@ const useStyles = makeStyles({
     transform: 'scale(0.8)',
   },
   title: {
-    fontSize: 14,
+    fontSize: 10,
   },
   link: {
     marginBottom: 30,
@@ -32,10 +32,10 @@ const UserCard = ({ data }) => {
       <Typography
         color="rgb(226, 145, 113)"
         className={classes.default}
-        variant="h3">
+        variant="h4">
         User
       </Typography>
-      <Typography variant="h1" className={classes.default}>
+      <Typography variant="h2" className={classes.default}>
         {data.owner.login}
       </Typography>
       <CardMedia className={classes.default}>
@@ -44,7 +44,7 @@ const UserCard = ({ data }) => {
       <Typography
         color="rgb(226, 145, 113)"
         className={classes.default}
-        variant="h3">
+        variant="h4">
         User Github Account
       </Typography>
       <Link
@@ -57,7 +57,7 @@ const UserCard = ({ data }) => {
       <Typography
         color="rgb(226, 145, 113)"
         className={classes.default}
-        variant="h3">
+        variant="h4">
         Repo Description
       </Typography>
       <Typography className={classes.default} variant="h4">
@@ -66,7 +66,7 @@ const UserCard = ({ data }) => {
       <Typography
         color="rgb(226, 145, 113)"
         className={classes.default}
-        variant="h3">
+        variant="h4">
         Repo Url
       </Typography>
       <Link
